@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.ftech.healingcard.MainActivity">
+
+<LinearLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearL0"
+    android:layout_marginBottom="240dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/Photo0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo0"
+        android:scaleType="fitStart"
+        android:layout_weight="1"
+        android:layout_toLeftOf="@id/Photo1"
+
+        />
+
+    <ImageView
+        android:id="@+id/Photo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo1"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:paddingRight="55dp"
+        android:layout_toRightOf="@id/Photo0"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearL1"
+        android:layout_marginTop="240dp"
+        >
+    <ImageView
+        android:id="@+id/Photo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo2"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:layout_toLeftOf="@id/Photo3"
+        android:paddingLeft="5dp"
+        android:paddingRight="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/Photo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo3"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:layout_alignRight="@id/Photo2"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have Fast and Full Healing Carla!"
+        android:textColor="#3b1760"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#970214"
+        android:text="We'r waiting with love!"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@id/LinearL0"
+        />
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c2d60f"
+        android:text="From Mom and Ferdy"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@id/LinearL1"
+        android:layout_alignRight="@id/LinearL1"
+        />
+</RelativeLayout>
